@@ -613,3 +613,23 @@ img.work-card__icon {
   padding-left: 12px;
   border-left: 3px solid var(--color-primary);
 }
+
+/* 案例场景前置 */
+.case-card__scene {
+  margin: 6px 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+/* 为什么是我们 · GitHub 小链接 */
+.why__github {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+.why__github a {
+  color: var(--color-aux);
+}
+.why__github a:hover {
+  color: var(--color-primary);
+}
