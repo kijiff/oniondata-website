@@ -493,3 +493,123 @@ img.work-card__icon {
   background: var(--color-bg);
   padding: 0;
 }
+
+/* ---------- 板块副标题 ---------- */
+.section-subtitle {
+  font-size: 14px;
+  color: var(--color-aux);
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+/* ---------- 服务卡片 ---------- */
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(60, 126, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.service-card__name {
+  font-size: var(--font-h3);
+  font-weight: 500;
+  color: var(--color-title);
+  margin-bottom: 6px;
+}
+
+.service-card__desc {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.service__platforms {
+  margin-top: 24px;
+  font-size: 13px;
+  color: var(--color-aux);
+  text-align: center;
+  padding: 12px;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-card);
+}
+
+/* ---------- 案例卡片字段 ---------- */
+.case-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.case-card__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.case-card__field {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.case-card__field-label {
+  color: var(--color-aux);
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+.case-card__field-value {
+  color: var(--color-text);
+}
+
+/* ---------- 为什么 tagline ---------- */
+.why__tagline {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--color-text);
+  text-align: center;
+  padding-left: 12px;
+  border-left: 3px solid var(--color-primary);
+}
